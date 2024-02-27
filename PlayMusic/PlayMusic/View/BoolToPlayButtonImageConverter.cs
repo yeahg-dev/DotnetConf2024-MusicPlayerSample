@@ -1,6 +1,6 @@
 ﻿using Microsoft.UI.Xaml.Data;
 
-namespace PlayMusic;
+namespace PlayMusic.View;
 
 public class BoolToPlayButtonImageConverter : IValueConverter
 {

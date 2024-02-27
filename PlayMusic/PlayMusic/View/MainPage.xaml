@@ -1,10 +1,10 @@
-﻿<Page x:Class="PlayMusic.MainPage"
+﻿<Page x:Class="PlayMusic.View.MainPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d"
-      xmlns:local="using:PlayMusic"
+      xmlns:local="using:PlayMusic.View"
       xmlns:utu="using:Uno.Toolkit.UI"
       d:DataContext="{d:DesignInstance Type='local:PlayerViewModel'}"
       Background="#E6D8E0">
@@ -75,47 +75,3 @@
       </Grid>
 
 </Page>
-
- <!-- <ProgressBar Style="{StaticResource ProgressBar.Default}" Value="0.5" HorizontalAlignment="Stretch"/> -->
-      <!--ProgressBar Inline 예시-->
-      <!-- <utu:ShadowContainer Background="LightGray" Shadows="{StaticResource InnerShadows}">
-            <ProgressBar IsIndeterminate="false" Value="50" HorizontalAlignment="Stretch" Height="12"
-                  Background="#E2E2E2" Foreground="#0092F5" CornerRadius="6"/>
-      </utu:ShadowContainer> -->
-
-               <!-- <Grid RowDefinitions="*, auto">
-            <StackPanel Grid.Row="0" Spacing="16" VerticalAlignment="Center" HorizontalAlignment="Center">
-                  <Image Source="{Binding AlbumCover}" Width="260" Height="260" HorizontalAlignment="Center"/>
-                  <StackPanel Spacing="4">
-                        <TextBlock Text="{Binding Title}" Style="{StaticResource TextBlock.Title}"/>
-                        <TextBlock Text="{Binding Artist}" Style="{StaticResource TextBlock.Subtitle}"/>
-                        <TextBlock Text="{Binding AlbumName}" Style="{StaticResource TextBlock.Body}"/>
-                  </StackPanel>
-            </StackPanel>
-            <ContentControl Grid.Row="1" Content="{Binding .}" ContentTemplate="{StaticResource PlayButton}" HorizontalAlignment="Center"
-                  Margin="0, 0"/>
-      </Grid> -->
-
-
-      <!-- <utu:ShadowCollection x:Key="InnerShadows">
-                  <utu:Shadow BlurRadius="20" OffsetY="5" OffsetX="40" Opacity="1" Spread="-5" Color="Gray" IsInner="False" /> 
-            </utu:ShadowCollection> -->
-
-            <!-- <Style x:Key="ProgressBar.Default" TargetType="ProgressBar">
-                  <Setter Property="Background" Value="#E2E2E2"/>
-                  <Setter Property="Foreground" Value="#0092F5"/>
-                  <Setter Property="Height" Value="12"/>
-                  <Setter Property="CornerRadius" Value="6"/>
-                  <Setter Property="Template">
-                        <Setter.Value>
-                              <ControlTemplate TargetType="ProgressBar">
-                                     <utu:ShadowContainer Background="LightGray" Shadows="{StaticResource InnerShadows}">
-                                          <ProgressBar IsIndeterminate="False" Value="{TemplateBinding Value}" 
-                                                Background="{TemplateBinding Background}" Foreground="{TemplateBinding Foreground}" 
-                                                CornerRadius="{TemplateBinding CornerRadius}" HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
-                                                Height="{TemplateBinding Height}" />
-                                    </utu:ShadowContainer>
-                              </ControlTemplate>
-                        </Setter.Value>
-                  </Setter>
-            </Style> -->

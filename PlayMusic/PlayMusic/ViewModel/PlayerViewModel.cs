@@ -3,7 +3,7 @@ using System.ComponentModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using Uno;
 
-namespace PlayMusic;
+namespace PlayMusic.ViewModel;
 
 public class PlayerViewModel : ObservableObject
 {

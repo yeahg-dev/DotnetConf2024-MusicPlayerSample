@@ -18,7 +18,7 @@ public class App : Application
                 {
                     // 사용할 서비스를 등록합니다.
                     services.AddSingleton<IPlayer, Player>();
-                    services.AddTransient<PlayerViewModel>();
+                    services.AddTransient<ViewModel.PlayerViewModel>();
                     
                     // HINT: ServiceProvider를 앱 전역에서 접근할 수 있도록 static 변수에 저장
                     ServiceProvider = services.BuildServiceProvider();
@@ -48,7 +48,7 @@ public class App : Application
             // When the navigation stack isn't restored navigate to the first page,
             // configuring the new page by passing required information as a navigation
             // parameter
-            rootFrame.Navigate(typeof(MainPage), args.Arguments);
+            rootFrame.Navigate(typeof(View.MainPage), args.Arguments);
         }
         // Ensure the current window is active
         MainWindow.Activate();
