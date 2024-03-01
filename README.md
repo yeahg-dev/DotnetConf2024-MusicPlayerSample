@@ -12,4 +12,4 @@
 
 <br>
 
-💁🏻‍♀️코드에 대한 상세한 설명은 발표 PDF를 참고해주세요
+💁🏻‍♀️코드에 대한 상세한 설명은 [발표 PDF](https://github.com/yeahg-dev/DotnetConf2024-MusicPlayerSample/blob/main/dotnetconf2024-yeji-ppt.pdf)를 참고해주세요
