@@ -12,10 +12,9 @@ internal class Player : IPlayer
     public Player()
     {
         _player = new MediaPlayer();
-        // TODO: Player에 음악 파일을 로드하고 준비가 제대로 동작하지 않음
-        // AssetFileDescriptor fd = Android.App.Application.Context.Assets.OpenFd("sample_music.mp3");
-        // _player.SetDataSource(fd.FileDescriptor);
-        // _player.Prepare();
+        AssetFileDescriptor fd = Android.App.Application.Context.Assets.OpenFd("sample_music.mp3");
+        _player.SetDataSource(fd);
+        _player.Prepare();
     }
 
     public void Play()
